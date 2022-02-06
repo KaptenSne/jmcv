@@ -1,0 +1,70 @@
+
+body
+{
+  /* Defines how wide the page can be */
+    max-width: 1200px;
+  /* Centers the entire page */
+    margin: 0 auto;
+    background-color: dodgerblue;
+    padding: 0 20px;
+}
+
+h1
+{
+   color:red;
+    font-size:4em;
+}
+
+h2
+{
+    font-size: 3em;
+    color: red;
+}
+
+h3
+{
+    font-size: 2em;
+    color: red;
+}
+
+ul li{
+  font-size:18px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.section {
+  width: 50%;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.logo {
+  max-width: 700px;
+  width:100%;
+}
+
+.info p {
+  font-size: 16px;
+}
+
+/* Mobile, This will make the section row become 100% eg. taking a full row instead of 50%, change container to block instead of flex */
+@media only screen and (max-width: 800px){
+  .container {
+    display: block;
+  }
+  .section {
+    width: 100%;
+  }
+  .info p {
+    font-size: 20px;
+  }
+  ul li{
+    font-size:22px;
+  }
+}
